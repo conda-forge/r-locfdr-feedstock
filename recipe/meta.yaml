@@ -15,14 +15,15 @@ source:
   sha256: 42d6e12593ae6d541e6813a140b92591dabeb1df94432a515507fc2eee9a54b9
 
 build:
-  number: 0
-  skip: true  # [win32]
-
+  merge_build_host: True  # [win]
+  noarch: generic
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
+
 requirements:
-  build:
+  host:
     - r-base
 
   run:
