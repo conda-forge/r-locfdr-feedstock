@@ -1,4 +1,4 @@
-{% set version = '1.1-8' %}
+{% set version = "1.1-8" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -15,9 +15,9 @@ source:
   sha256: 42d6e12593ae6d541e6813a140b92591dabeb1df94432a515507fc2eee9a54b9
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   noarch: generic
-  number: 1001
+  number: 1002
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,10 +36,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=locfdr
-  license: GPL-2
+  license: GPL-2.0-only
   summary: Computation of local false discovery rates.
   license_family: GPL2
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 extra:
   recipe-maintainers:
     - conda-forge/r
