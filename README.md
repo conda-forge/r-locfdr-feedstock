@@ -1,11 +1,11 @@
-About r-locfdr
-==============
+About r-locfdr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-locfdr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=locfdr
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-locfdr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Computation of local false discovery rates.
 
