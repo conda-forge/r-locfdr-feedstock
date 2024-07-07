@@ -1,6 +1,5 @@
 {% set version = '1.1-8' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-locfdr
@@ -13,8 +12,7 @@ source:
   sha256: 42d6e12593ae6d541e6813a140b92591dabeb1df94432a515507fc2eee9a54b9
 
 build:
-  merge_build_host: True  # [win]
-  number: 1005
+  number: 1006
   noarch: generic
   rpaths:
     - lib/R/lib/
